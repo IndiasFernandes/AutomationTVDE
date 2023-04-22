@@ -45,14 +45,16 @@ for window_handle in driver.window_handles:
         print(f'switched to {window_handle}')
         break
 
-driver.implicitly_wait(5)
 
-elem = driver.find_element("xpath", '//*[@id="PHONE_NUMBER_or_EMAIL_ADDRESS"]')
+
+driver.implicitly_wait(5)
+time.sleep(5)
+elem = driver.find_element("xpath", '//*[@id="EMAIL_ADDRESS"]')
 elem.send_keys('vogaisportugal@gmail.com')
 
 elem = driver.find_element("xpath", '//*[@id="forward-button"]')
 elem.click()
-
+time.sleep(30)
 driver.implicitly_wait(4)
 elem = driver.find_element("xpath", '//*[@id="back-button"]')
 elem.click()

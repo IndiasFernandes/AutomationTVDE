@@ -24,7 +24,7 @@ driver.get("https://fleets.bolt.eu/login")
 # Click on the input field to make it active
 
 elem = driver.find_element("xpath", '//*[@id="username"]')
-elem.send_keys('pedro.esperanco@hotmail.com')
+elem.send_keys('vipturismoportugal@gmail.com')
 
 elem = driver.find_element("xpath", '//*[@id="password"]')
 elem.send_keys('Pesp2503')
